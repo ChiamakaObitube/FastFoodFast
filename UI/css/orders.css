@@ -23,7 +23,7 @@ h4,
 h5,
 h6 {
     font-weight: 300;
-    color: white
+    color: white;
 }
 
 .flex {
@@ -70,14 +70,44 @@ h6 {
 }
 
 main {
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-main h1 {
-    text-align: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    margin: 1em;
-    ;
+#left {
+    background: #fff;
+    display: flex;
+    width: 100%;
+}
+
+#right {
+    width: 100%;
+}
+
+.banner {
+    margin: 0 auto;
+    padding: 0em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.banner h2 {
+    padding: 0.5em;
+    background: #2132ff
+}
+
+.banner li a {
+    padding-bottom: 0.5em;
+    text-decoration: none;
+}
+
+.banner li a:hover {
+    color: #2132ff;
+}
+
+.banner ul li a:active {
+    background-color: #0b0d22;
 }
 
 .menu-container {
@@ -102,32 +132,25 @@ main h1 {
     color: #da2828;
     background: black;
     text-transform: capitalize;
-    width: 100%;
-    margin-bottom: 10px;
-    margin-top: 5px;
     padding-bottom: 5px;
     border-radius: 5%;
     text-align: center;
-}
-
-.column p {
-    text-align: center;
-}
-
-.column button {
-    display: flex;
     margin: 0 auto;
+}
+
+.menu-button {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu-button button {
+    display: flex;
+    margin: 0em auto;
     border-radius: 10%;
     background: black;
     color: white;
-    padding: 10px;
-}
-
-.price {
-    display: flex;
-    margin: 0 auto;
-    font-size: 1.3em;
-    color: #da2828;
+    padding: 20px;
+    font-size: 1em;
 }
 
 .footer-main {
@@ -139,7 +162,21 @@ main h1 {
     margin: 0 auto;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    #left {
+        background: #fff;
+        flex: 20%;
+        padding: 1em 0em 0em 0em;
+        height: 50vh;
+        margin-top: 1.2em;
+    }
+    #right {
+        flex: 70%;
+    }
     .menu-items {
         width: 30%;
     }
@@ -148,5 +185,11 @@ main h1 {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .banner {
+        margin: 0 auto;
+        padding: 1em;
+        font-size: 1.2em;
+        text-transform: uppercase;
     }
 }

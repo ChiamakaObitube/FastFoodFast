@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', monospace;
+    font-weight: 300;
+    background: #181818;
+}
+
+#wrapper {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: 300;
+    color: white;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-main,
+.footer-main {
+    background: #333;
+    height: 50px;
+    padding: 0;
+    width: 100%;
+}
+
+.header-main .nav-main {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    text-transform: uppercase;
+}
+
+.nav-main li {
+    flex: 1 0 auto;
+    display: inline;
+    font-size: 1.5em;
+}
+
+.nav ul {
+    float: right;
+}
+
+.nav-main h2 {
+    margin-left: 5px;
+}
+
+.nav-main a {
+    text-decoration: none;
+    color: #999;
+    margin-right: 10px;
+    font-size: 90%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#left {
+    background: #fff;
+    display: flex;
+    width: 100%;
+}
+
+#right {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 90vh;
+}
+
+#right h1 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.banner {
+    margin: 0 auto;
+    padding: 0em;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
+
+.banner h2 {
+    padding: 0.5em;
+    background: #2132ff
+}
+
+.banner li a {
+    padding-bottom: 0.5em;
+    text-decoration: none;
+}
+
+.banner li a:hover {
+    color: #2132ff;
+}
+
+.banner ul li a:active {
+    background-color: #0b0d22;
+}
+
+.menu-container {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    width: 50%;
+    height: 70vh;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 1em 1em 1em 1em;
+}
+
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+/* Style the submit button */
+
+input[type=submit] {
+    width: 100%;
+    background-color: rgb(20, 24, 20);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+/* Add a background color to the submit button on mouse-over */
+
+input[type=submit]:hover {
+    background-color: #131a13;
+}
+
+.footer-main {
+    color: #777;
+    margin: 0;
+}
+
+.footer-main p {
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        display: flex;
+        flex-direction: row;
+    }
+    #left {
+        background: #fff;
+        flex: 20%;
+        padding: 1em 0em 0em 0em;
+        height: 50vh;
+        margin-top: 1.2em;
+    }
+    #right {
+        flex: 70%;
+    }
+    .menu-items {
+        width: 30%;
+    }
+    .menu-container {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .banner {
+        margin: 0 auto;
+        padding: 1em;
+        font-size: 1.2em;
+        text-transform: uppercase;
+    }
+}

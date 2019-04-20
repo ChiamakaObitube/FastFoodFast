@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Admin Add Food Item</title>
+    <link rel='stylesheet' href='/UI/css/admin-add-food.css'>
+</head>
+
+<body>
+
+    <div id="wrapper">
+
+        <header class="header-main flex">
+            <nav class="nav-main">
+                <h2><a href="/UI/index.html">YumChow</a></h2>
+                <ul class="nav">
+                    <li><a href="/UI/usercart.html">Cart</a></li>
+                    <li><a href="#">Login</a></li>
+
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="left">
+                <div class="banner">
+                    <h2>Admin DashBoard</h2>
+
+                    <ul>
+                        <li><a href="admin-recent-orders.html">Recent Orders</a></li>
+                        <li> <a href="all-orders.html">All Orders</a></li>
+                        <li><a href="admin-add-food.html">Add New Food Items</a></li>
+                        <li><a href="admin-edit-delete.html">Edit/Delete Food Item</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="right">
+                <h1> New Food Item</h1>
+                <div class="menu-container">
+                    <form action="">
+                        <label for="fname">Food Item</label>
+                        <input type="text" id="name" required>
+                        <label for="price">Price</label>
+                        <input type="text" id="price" required>
+                        <label for="quantity">Quantity</label>
+                        <input type="text" id="qunatity" required>
+                        <label for="category">Category</label>
+                        <select id="category">
+                            <option value="african">African</option>
+                            <option value="continental">Continental</option>
+                            <option value="dessert">Dessert</option>
+                        </select>
+                        <label for="lname">Image URl</label>
+                        <input type="text" id="image" required>
+                        <input type="submit" value="Submit">
+                    </form>
+
+                </div>
+            </div>
+        </main>
+        <footer class="footer-main flex">
+            <p> &copy; 2019 YumChow designed and developed by Chiamaka</p>
+        </footer>
+    </div>
+</body>
+
+</html>

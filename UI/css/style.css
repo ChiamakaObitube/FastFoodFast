@@ -87,7 +87,7 @@ button {
     border: 1px solid #18ab29;
     display: inline-block;
     cursor: pointer;
-    color: #ffffff;
+    color: #167948;
     font-family: Arial;
     font-size: 17px;
     padding: 16px 31px;
@@ -102,6 +102,10 @@ button:hover {
 button:active {
     position: relative;
     top: 1px;
+}
+
+a {
+    text-decoration: none;
 }
 
 
