@@ -50,7 +50,7 @@ h6 {
 
 .nav-main li {
     flex: 1 0 auto;
-    display: inline;
+    display: inline-flex;
     font-size: 1.5em;
 }
 
@@ -73,10 +73,59 @@ main {
     flex: 1;
 }
 
+main h1 {
+    text-align: center;
+    padding: 1em;
+}
+
+.order-row {
+    overflow-x: auto;
+}
+
+table {
+    width: 70%;
+    background: white;
+    border-radius: 1em 1em;
+    ;
+}
+
+table,
+th,
+td {
+    border: 1px solid black;
+    padding: 1em;
+    margin-top: 10px;
+}
+
+tr {
+    margin: 1em 2em;
+}
+
+tr td {
+    text-align: center;
+}
+
+td button {
+    margin: 0 auto;
+    border-radius: 10%;
+    background: rgb(206, 28, 28);
+    color: white;
+    padding: 10px;
+}
+
 .footer-main {
     color: #777;
 }
 
 .footer-main p {
     margin: 0 auto;
+}
+
+@media screen and (min-width: 500px) {
+    .order-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
