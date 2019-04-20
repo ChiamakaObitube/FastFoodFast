@@ -111,6 +111,7 @@ td button {
     background: rgb(206, 28, 28);
     color: white;
     padding: 10px;
+    cursor: pointer;
 }
 
 .footer-main {
