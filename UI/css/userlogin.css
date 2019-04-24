@@ -26,12 +26,6 @@ h6 {
     color: white
 }
 
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
 .header-main,
 .footer-main {
     background: #333;
@@ -50,11 +44,12 @@ h6 {
 
 .header-main .nav-main h2 {
     margin: 0 auto;
+    padding: 0.5em;
 }
 
 .nav-main a {
     text-decoration: none;
-    color: #999;
+    color: #fff;
     margin-right: 10px;
     font-size: 90%;
 }
@@ -142,8 +137,10 @@ input[type=submit]:hover {
 }
 
 .footer-main {
-    color: #777;
+    color: #fff;
     margin: 0;
+    padding: 1em;
+    text-align: center;
 }
 
 .footer-main p {

@@ -1,195 +1,211 @@
-@import url('https://fonts.googleapis.com/');
-* {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Montserrat', monospace;
-    font-weight: 300;
-    background: #181818;
-}
-
-#wrapper {
-    display: flex;
-    min-height: 100vh;
-    flex-direction: column;
-    width: 100%;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-weight: 300;
-    color: white;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-main,
-.footer-main {
-    background: #333;
-    height: 50px;
-    padding: 0;
-    width: 100%;
-}
-
-.header-main .nav-main {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 0;
-    list-style: none;
-    text-transform: uppercase;
-}
-
-.nav-main li {
-    flex: 1 0 auto;
-    display: inline;
-    font-size: 1.5em;
-}
-
-.nav ul {
-    float: right;
-}
-
-.nav-main h2 {
-    margin-left: 5px;
-}
-
-.nav-main a {
-    text-decoration: none;
-    color: #999;
-    margin-right: 10px;
-    font-size: 90%;
-}
-
-main {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-}
-
-#left {
-    background: #fff;
-    display: flex;
-    width: 100%;
-}
-
-#right {
-    width: 100%;
-}
-
-.banner {
-    margin: 0 auto;
-    padding: 0em;
-    font-size: 1.2em;
-    text-transform: uppercase;
-}
-
-.banner h2 {
-    padding: 0.5em;
-    background: #2132ff
-}
-
-.banner li a {
-    padding-bottom: 0.5em;
-    text-decoration: none;
-}
-
-.banner li a:hover {
-    color: #2132ff;
-}
-
-.banner ul li a:active {
-    background-color: #0b0d22;
-}
-
-.menu-container {
-    display: flex;
-    flex-direction: column;
-}
-
-.menu-items {
-    display: flex;
-    background: white;
-    justify-content: center;
-    padding: 10px;
-    margin: 5px;
-    margin-top: 2em;
-    margin-bottom: 1.5em;
-    border-radius: 5%;
-}
-
-.food-name {
-    display: flex;
-    font-size: 1.3em;
-    color: #da2828;
-    background: black;
-    text-transform: capitalize;
-    padding-bottom: 5px;
-    border-radius: 5%;
-    text-align: center;
-    margin: 0 auto;
-}
-
-.menu-button {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.menu-button button {
-    display: flex;
-    margin: 0em auto;
-    border-radius: 10%;
-    background: black;
-    color: white;
-    padding: 20px;
-    font-size: 1em;
-}
-
-.footer-main {
-    color: #777;
-    margin: 0;
-}
-
-.footer-main p {
-    margin: 0 auto;
-}
-
-@media screen and (min-width: 600px) {
-    main {
+    @import url('https://fonts.googleapis.com/');
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Montserrat', monospace;
+        font-weight: 300;
+        margin: 0 !important;
+    }
+    
+    #wrapper {
         display: flex;
-        flex-direction: row;
+        background: black;
+        min-height: 100vh;
+        flex-direction: column;
+        width: 100%;
     }
-    #left {
-        background: #fff;
-        flex: 20%;
-        padding: 1em 0em 0em 0em;
-        height: 50vh;
-        margin-top: 1.2em;
+    
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-weight: 300;
+        color: white
     }
-    #right {
-        flex: 70%;
+    
+    .header-main,
+    .footer-main {
+        height: 60px;
+        width: 100%;
+        background: #ff2323;
     }
-    .menu-items {
-        width: 30%;
-    }
-    .menu-container {
+    
+    .header-main .nav-main {
         display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
-        justify-content: space-around;
-    }
-    .banner {
-        margin: 0 auto;
-        padding: 1em;
-        font-size: 1.2em;
+        padding: 0;
+        list-style: none;
         text-transform: uppercase;
     }
-}
+    
+    .nav li {
+        float: right;
+        list-style: none;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
+    
+    .nav #logo {
+        float: left;
+        font-size: 1.8em;
+    }
+    
+    .nav a {
+        text-decoration: none;
+        color: #fff;
+        margin-right: 10px;
+        font-size: 90%;
+        padding-right: 1em;
+    }
+    
+    main {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    #left {
+        background: #fff;
+        display: flex;
+        width: 100%;
+        margin-top: 2em;
+        flex: 20%
+    }
+    
+    #right {
+        width: 100%;
+    }
+    
+    .banner {
+        margin: 0 auto;
+        padding: 0em;
+        font-size: 1.2em;
+        ;
+    }
+    
+    .banner h2 {
+        padding: 0.5em;
+        background: #ff2323
+    }
+    
+    .banner li a {
+        padding: 0;
+        text-decoration: none;
+        text-transform: capitalize;
+        font-size: 1.5em;
+        color: black;
+    }
+    
+    .banner li a:hover {
+        color: #2132ff;
+    }
+    
+    .menu-container {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5em;
+    }
+    
+    .menu-items {
+        display: flex;
+        background: white;
+        justify-content: center;
+        padding: 10px;
+        margin: 5px;
+        margin-top: 2em;
+        margin-bottom: 1.5em;
+        border-radius: 5%;
+    }
+    
+    .food-name {
+        font-size: 1.3em;
+        color: #da2828;
+        background: black;
+        text-transform: capitalize;
+        padding-bottom: 5px;
+        border-radius: 5%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    
+    .menu-button {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .price {
+        margin: 0 auto;
+        font-size: 1.3em;
+        color: #da2828;
+        text-align: center;
+    }
+    
+    .menu-button button {
+        margin: 0em auto;
+        background: black;
+        color: white;
+        padding: 20px;
+        font-size: 1em;
+    }
+    
+    .footer-main {
+        margin: 0;
+        bottom: 0;
+    }
+    
+    .footer-main p {
+        margin: 0 auto;
+        color: white;
+        text-align: center;
+        padding: 1em;
+    }
+    
+    @media screen and (min-width: 600px) {
+        main {
+            display: flex;
+            flex-direction: row;
+        }
+        #left {
+            margin-top: 2em;
+            background: #fff;
+            flex: 30%;
+            padding: 1em 0em 0em 0em;
+            height: 40vh;
+            margin-left: 1.2em;
+        }
+        #right {
+            flex: 70%;
+        }
+        .menu-items {
+            width: 30%;
+        }
+        .menu-container {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .banner {
+            margin: 0 auto;
+            padding: 1em;
+            font-size: 1.2em;
+            text-transform: capitalize;
+        }
+        .menu-button button {
+            display: flex;
+            margin: 0em auto;
+            background: black;
+            color: white;
+            padding: 20px;
+            font-size: 1em;
+        }
+        .footer-main {
+            margin: 0;
+            bottom: 0;
+            position: absolute;
+        }
+    }

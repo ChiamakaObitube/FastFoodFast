@@ -6,11 +6,12 @@
 body {
     font-family: 'Montserrat', monospace;
     font-weight: 300;
-    background: #181818;
+    margin: 0 !important;
 }
 
 #wrapper {
     display: flex;
+    background: black;
     min-height: 100vh;
     flex-direction: column;
     width: 100%;
@@ -23,21 +24,14 @@ h4,
 h5,
 h6 {
     font-weight: 300;
-    color: white;
-}
-
-.flex {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    color: white
 }
 
 .header-main,
 .footer-main {
-    background: #333;
-    height: 50px;
-    padding: 0;
+    height: 60px;
     width: 100%;
+    background: #ff2323;
 }
 
 .header-main .nav-main {
@@ -48,25 +42,24 @@ h6 {
     text-transform: uppercase;
 }
 
-.nav-main li {
-    flex: 1 0 auto;
-    display: inline;
+.nav li {
+    float: right;
+    list-style: none;
+    text-transform: uppercase;
     font-size: 1.5em;
 }
 
-.nav ul {
-    float: right;
+.nav #logo {
+    float: left;
+    font-size: 1.8em;
 }
 
-.nav-main h2 {
-    margin-left: 5px;
-}
-
-.nav-main a {
+.nav a {
     text-decoration: none;
-    color: #999;
+    color: #fff;
     margin-right: 10px;
     font-size: 90%;
+    padding-right: 1em;
 }
 
 main {
@@ -79,13 +72,13 @@ main {
     background: #fff;
     display: flex;
     width: 100%;
+    margin-top: 2em;
+    flex: 20%
 }
 
 #right {
-    width: 100%;
     display: flex;
     flex-direction: column;
-    width: 50%;
     height: 90vh;
 }
 
@@ -98,17 +91,19 @@ main {
     margin: 0 auto;
     padding: 0em;
     font-size: 1.2em;
-    text-transform: uppercase;
 }
 
 .banner h2 {
     padding: 0.5em;
-    background: #2132ff
+    background: #ff2323
 }
 
 .banner li a {
-    padding-bottom: 0.5em;
+    padding: 0;
     text-decoration: none;
+    text-transform: capitalize;
+    font-size: 1.2em;
+    color: black;
 }
 
 .banner li a:hover {
@@ -120,11 +115,8 @@ main {
 }
 
 .menu-container {
-    display: flex;
-    flex-direction: column;
     background: white;
-    width: 50%;
-    height: 70vh;
+    width: 60%;
     margin: 0 auto;
     margin-top: 2em;
     padding: 1em 1em 1em 1em;
@@ -163,12 +155,15 @@ input[type=submit]:hover {
 }
 
 .footer-main {
-    color: #777;
     margin: 0;
+    bottom: 0;
 }
 
 .footer-main p {
     margin: 0 auto;
+    color: white;
+    text-align: center;
+    padding: 1em;
 }
 
 @media screen and (min-width: 600px) {
@@ -178,10 +173,10 @@ input[type=submit]:hover {
     }
     #left {
         background: #fff;
-        flex: 20%;
+        flex: 30%;
         padding: 1em 0em 0em 0em;
-        height: 50vh;
-        margin-top: 1.2em;
+        height: 40vh;
+        margin-left: 2em;
     }
     #right {
         flex: 70%;
@@ -200,5 +195,10 @@ input[type=submit]:hover {
         padding: 1em;
         font-size: 1.2em;
         text-transform: uppercase;
+    }
+    .footer-main {
+        margin: 0;
+        bottom: 0;
+        position: absolute
     }
 }
